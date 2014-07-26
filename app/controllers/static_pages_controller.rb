@@ -14,6 +14,10 @@ class StaticPagesController < ApplicationController
     data = response.body
     @results = JSON.parse(data)
 
+    plResponse = Net::HTTP.get_response(URI.parse("https://www.googleapis.com/youtube/v3/playlists?part=snippet&id=PLDOix9BwbbieH5xnN0lDTkwNVULQ14Usc&key=AIzaSyCPK2qXfkJ2LYAydvWgVWl3DuKosC_CjNA"))
+    data2 = plResponse.body
+    @listinfo = JSON.parse(data2)
+    #TODO: Retreive playlist title
     @items = @results["items"]
   end
 end

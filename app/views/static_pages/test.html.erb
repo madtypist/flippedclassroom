@@ -1,4 +1,4 @@
-<h1>Test Video</h1>
+<h1><%= @listinfo["items"][0]["snippet"]["title"] %></h1>
 
 <% @items.each do |item| 
   videoURL = "//www.youtube.com/embed/" + item["snippet"]["resourceId"]["videoId"]
