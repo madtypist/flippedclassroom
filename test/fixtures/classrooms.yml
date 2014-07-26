@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  grade: 1
+  code: MyString
+  activePlaylistLink: MyString
+
+two:
+  name: MyString
+  grade: 1
+  code: MyString
+  activePlaylistLink: MyString
