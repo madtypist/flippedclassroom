@@ -1,0 +1,8 @@
+<h1>Test Video</h1>
+
+<% @items.each do |item| 
+  videoURL = "//www.youtube.com/embed/" + item["snippet"]["resourceId"]["videoId"]
+%>  
+
+  <p><div class="video youtube"><iframe width="410" height="270" src="<%= videoURL%>" frameborder="0" allowfullscreen></iframe></div></p>
+<% end %>
