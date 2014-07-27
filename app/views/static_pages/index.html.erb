@@ -3,7 +3,7 @@
 <p class="lead">Our site is a way to show students a curated list of youtube videos that has been preselected by their teacher. </p>
 
 <h2>Enter your classroom code here:</h2>
-<%= form_tag("/static_pages", method: "get") do %>
-  <p><%= text_field_tag(:q) %></p>
+<%= form_tag("/student/assignment", method: "get") do %>
+  <p><%= text_field_tag(:code) %></p>
   <p><%= submit_tag "Go", :class => "btn btn-lg btn-success" %></p>
 <% end %>

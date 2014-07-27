@@ -1,0 +1,9 @@
+<h1>Video Assignment for <%= @classroom.name %></h1>
+<p>Here are your videos. Enjoy</p>
+<h2><%= @listinfo["items"][0]["snippet"]["title"] %></h2>
+<% @items.each do |item| 
+  videoURL = "//www.youtube.com/embed/" + item["snippet"]["resourceId"]["videoId"]
+%>  
+
+  <p><div class="video youtube"><iframe width="410" height="270" src="<%= videoURL%>" frameborder="0" allowfullscreen></iframe></div></p>
+<% end %>

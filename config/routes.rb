@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'student/assignment'
+
   resources :classrooms
 
   get 'static_pages/home'
