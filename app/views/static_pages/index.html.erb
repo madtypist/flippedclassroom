@@ -1,7 +1,9 @@
 <h1>Welcome To Flipped Classroom</h1>
 
-<p class="lead">Our site is away to show students a curated list of youtube videos that has been preselected by their teacher. </p>
- 
-<p>On load, a video of the day appears.  The video of the day can be the child’s homework for that day and can be changed by the teacher on a daily basis by simply chaning the order of the videos in a youtube playlist. </p>
- 
-<p>When the unit changes, the teacher simply changes which playlist is active and the students will receive all the videos for that unit, so they can explore the topic at their own pace or can view a video from previous days if absent. </p>
+<p class="lead">Our site is a way to show students a curated list of youtube videos that has been preselected by their teacher. </p>
+
+<h2>Enter your classroom code here:</h2>
+<%= form_tag("/static_pages", method: "get") do %>
+  <p><%= text_field_tag(:q) %></p>
+  <p><%= submit_tag "Go", :class => "btn btn-lg btn-success" %></p>
+<% end %>

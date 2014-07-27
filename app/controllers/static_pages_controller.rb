@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def index
+    render layout: "layouts/onepage"
   end
 
   def help
